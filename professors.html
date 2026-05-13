@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professors | Course Rescue</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header site-header-nav">
+        <a class="brand-link" href="index.html">
+          <p class="eyebrow">THE NEW SCHOOL</p>
+          <p class="brand-title">Course Rescue</p>
+        </a>
+      </header>
+
+      <main class="professors-page">
+        <section class="professors-hero">
+          <h1>PROFESSORS</h1>
+        </section>
+
+        <section class="filter-row" aria-label="Professor filters">
+          <select class="filter-pill" id="subject-filter">
+            <option value="all">Subject: All</option>
+            <option value="pucd">Subject: PUCD</option>
+            <option value="pufy">Subject: PUFY</option>
+          </select>
+
+          <button type="button" class="filter-pill">Level: Undergrad</button>
+
+          <select class="filter-pill" id="sort-filter">
+            <option value="rate">Sort: Rate</option>
+            <option value="name">Sort: Name</option>
+          </select>
+        </section>
+
+        <section>
+          <p class="professor-status" id="professor-status">Loading professors from are.na...</p>
+          <div class="professor-grid" id="image-container"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="professors.js"></script>
+  </body>
+</html>
